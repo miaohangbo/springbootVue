@@ -1,0 +1,34 @@
+server:
+  port: 8082
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false
+    password: 59852369
+    username: root
+  jpa:
+    database: MySQL
+    generate-ddl: true
+#邮箱配置
+  mail:
+    host: smtp.qq.com
+    username: 982908910@qq.com
+    password: mdbpnmpygtvbbdhe
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+  redis:
+    database: 0
+    host: 127.0.0.1
+upload:
+  qiniu:
+    ak: m7mFmCTX55PMNPkEBaOLFQMLxW4ZFfZwf2EBm1M2
+    sk: dn220PqIs813-IYrIZtzO_bGLXPo3QSVNep6wNty
+    bucketname: 2002-images
+    url: http://qf73yuqaz.hd-bkt.clouddn.com/
+
